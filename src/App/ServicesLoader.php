@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Services\PaymentsService;
+use App\Validators\PaymentsValidator;
 use Silex\Application;
 use Carbon\Carbon;
 
@@ -34,6 +35,10 @@ class ServicesLoader
 
         $this->app['payments.service'] = function () {
             return new PaymentsService($this->app['orm.em'], $this->app['carbon']);
+        };
+
+        $this->app['payments.validator'] = function () {
+            return new PaymentsValidator($this->app['validator']);
         };
     }
 }
