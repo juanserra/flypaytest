@@ -45,7 +45,7 @@ class PaymentsService
     /**
      * Get payments processed in the last 24 hours.
      *
-     * @param int $locationId
+     * @param int|null $locationId
      * @return array
      */
     public function getLastPayments($locationId)
