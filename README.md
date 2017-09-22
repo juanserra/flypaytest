@@ -67,7 +67,7 @@ If parameters are missing from the request body or are invalid, a `422` response
 
 Clone repository and run `composer install`.
 
-This project requires a MySQL database. To set up, create an emtpy database, import [schema.sql](resources/database/schema.sql) and update [config](resources/config/prod.php).
+This project requires a MySQL database. To set up, create an emtpy database, import [schema.sql](resources/sql/schema.sql) and update [config](resources/config/prod.php).
 
 Web server should have document root on [public/index.php](public/index.php).
 
