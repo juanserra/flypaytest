@@ -1,0 +1,20 @@
+{
+    "name": "juanserra/flypaytest",
+    "description": "Simple API for Flypay coding test.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Juan Serra",
+            "email": "contact@juanserra.net"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "silex/silex": "^2.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "App": "src/"
+        }
+    }
+}
