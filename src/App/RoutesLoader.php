@@ -29,7 +29,7 @@ class RoutesLoader
     private function instantiateControllers()
     {
         $this->app['payments.controller'] = function () {
-            return new PaymentsController();
+            return new PaymentsController($this->app['payments.service']);
         };
     }
 

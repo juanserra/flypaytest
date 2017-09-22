@@ -10,7 +10,10 @@
     ],
     "require": {
         "php": "^7.1",
-        "silex/silex": "^2.2"
+        "silex/silex": "^2.2",
+        "doctrine/orm": "^2.5",
+        "dflydev/doctrine-orm-service-provider": "^2.0",
+        "nesbot/carbon": "^1.22"
     },
     "autoload": {
         "psr-0": {
